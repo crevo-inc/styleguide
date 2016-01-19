@@ -1,0 +1,217 @@
+html {
+  height: 100%; }
+
+body {
+  height: 100%; }
+
+.wrapper {
+  height: 100%;
+  overflow: hidden; }
+  @media (max-width: 1000px) {
+    .wrapper {
+      height: auto; } }
+
+.side {
+  height: 100%;
+  width: 300px;
+  float: left; }
+  @media (max-width: 1000px) {
+    .side {
+      width: 100%;
+      float: none;
+      display: none; } }
+
+.main {
+  height: 100%;
+  margin-left: 300px;
+  background: #ffffff;
+  overflow: scroll; }
+  @media (max-width: 1000px) {
+    .main {
+      margin: 0;
+      width: 100%; } }
+
+.side-menu {
+  height: 100%;
+  width: 150px;
+  float: left;
+  background: #333333;
+  padding: 0 15px;
+  overflow: scroll; }
+  @media (max-width: 1000px) {
+    .side-menu {
+      width: 50%; } }
+  .side-menu .home {
+    text-align: center; }
+  .side-menu li {
+    border-bottom: 1px solid #666666; }
+  .side-menu li:last-child {
+    border-bottom: none; }
+  .side-menu li a {
+    padding: 20px;
+    color: #666666; }
+  .side-menu li a:hover {
+    color: #ffffff;
+    background: none; }
+  .side-menu li a:focus {
+    background: none; }
+  .side-menu li.active {
+    position: relative; }
+  .side-menu li.active:after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: -15px;
+    transform: translateY(-50%);
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    border-left: 15px solid transparent;
+    border-right: 15px solid #666666; }
+  .side-menu li.active a {
+    color: #ffffff; }
+
+.side-detail {
+  height: 100%;
+  width: 150px;
+  float: right;
+  background: #666666;
+  padding-top: 105px; }
+  @media (max-width: 1000px) {
+    .side-detail {
+      width: 50%; } }
+
+.side-menu-sub {
+  list-style-type: none;
+  padding: 0; }
+  .side-menu-sub li {
+    border-bottom: 1px solid transparent; }
+  .side-menu-sub li:last-child {
+    border-bottom: none; }
+  .side-menu-sub li a {
+    padding: 10px 20px;
+    color: #cccccc;
+    display: block;
+    padding: 5px 30px;
+    text-decoration: none; }
+  .side-menu-sub li a:hover {
+    color: #ffffff; }
+
+.main-title {
+  position: relative;
+  text-align: center;
+  border-top: 5px solid #ed4e52;
+  background: #fafafa;
+  border-bottom: 1px solid #eeeeee; }
+
+.title-body {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); }
+  .title-body .logo {
+    margin: 0;
+    margin-bottom: 40px; }
+  .title-body .title {
+    font-size: 2em;
+    font-weight: normal;
+    padding: 20px;
+    width: 300px;
+    border-top: 1px solid #666666;
+    border-bottom: 1px solid #666666;
+    margin: 0;
+    color: #666666; }
+
+.main-content .container {
+  width: 700px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto; }
+  @media (max-width: 1000px) {
+    .main-content .container {
+      width: 100%; } }
+
+.content-head {
+  text-align: center;
+  border-bottom: 1px solid #eeeeee;
+  margin: 0;
+  padding-top: 60px;
+  padding-bottom: 30px;
+  font-size: 3em;
+  font-weight: normal; }
+  .content-head span {
+    margin-top: 30px;
+    display: block;
+    font-size: 0.4em;
+    line-height: 1.5; }
+  @media (max-width: 1000px) {
+    .content-head span {
+      text-align: left; }
+    .content-head br {
+      display: none; } }
+
+.content-body {
+  padding-bottom: 60px; }
+
+.content-body-block {
+  padding-top: 60px; }
+
+.content-body-title {
+  margin: 0;
+  margin-bottom: 40px;
+  font-size: 2em; }
+
+.content-body-description {
+  margin-bottom: 30px;
+  line-height: 2; }
+
+.content-body-design {
+  margin-bottom: 30px; }
+
+.content-body-code pre {
+  border-color: #eeeeee;
+  border-radius: 3px;
+  margin: 0;
+  background: #fafafa;
+  overflow-x: scroll; }
+
+.content-body-code code {
+  white-space: pre;
+  word-wrap: normal; }
+
+.code-tab {
+  margin-bottom: 20px;
+  border-color: #eeeeee; }
+  .code-tab li a {
+    border: 1px solid #eeeeee;
+    margin: 0;
+    border-right: none;
+    color: #cccccc; }
+  .code-tab li.active a,
+  .code-tab li.active a:focus,
+  .code-tab li.active a:hover {
+    border-color: #eeeeee;
+    border-bottom-color: transparent;
+    border-right: none; }
+  .code-tab li:last-child a,
+  .code-tab li:last-child.active a,
+  .code-tab li:last-child.active a:focus,
+  .code-tab li:last-child.active a:hover {
+    border-right: 1px solid #eeeeee; }
+  .code-tab li a:hover {
+    border-bottom: none;
+    color: #555555; }
+
+.design-area {
+  margin: 10px 0; }
+
+/*
+@import "base";
+@import "layout";
+@import "forms";
+@import "buttons";
+@import "tables";
+@import "munus";
+@import "text";
+@import "modules";
+*/

@@ -1,0 +1,2261 @@
+<!DOCTYPE html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>styleguide/crevo</title>
+
+<!-- bootstrap css -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css" integrity="sha384-aUGj/X2zp5rLCbBxumKTCw2Z50WgIr1vs/PFN4praOTvYXWlVyh2UtNUU0KAUhAX" crossorigin="anonymous">
+
+<!-- font-awesome -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+<!-- style -->
+<link rel="stylesheet" href="scss/style.css">
+
+</head>
+<body>
+
+<div class="wrapper">
+
+    <div class="side">
+
+        <!-- Nav tabs -->
+        <ul class="side-menu nav" role="tablist">
+            <li class="home"><a href="#"><img src="images/icon.png" alt="" width="40" /></a></li>
+            <li role="presentation" class="active"><a href="#layouts" aria-controls="layouts" role="tab" data-toggle="tab">Layouts</a></li>
+            <li role="presentation"><a href="#base" aria-controls="base" role="tab" data-toggle="tab">Base</a></li>
+            <li role="presentation"><a href="#grids" aria-controls="grids" role="tab" data-toggle="tab">Grids</a></li>
+            <li role="presentation"><a href="#forms" aria-controls="forms" role="tab" data-toggle="tab">Forms</a></li>
+            <li role="presentation"><a href="#buttons" aria-controls="buttons" role="tab" data-toggle="tab">Buttons</a></li>
+            <li role="presentation"><a href="#tables" aria-controls="tables" role="tab" data-toggle="tab">Tables</a></li>
+            <li role="presentation"><a href="#menus" aria-controls="menus" role="tab" data-toggle="tab">Menus</a></li>
+            <li role="presentation"><a href="#text" aria-controls="text" role="tab" data-toggle="tab">Text</a></li>
+            <li role="presentation"><a href="#modules" aria-controls="modules" role="tab" data-toggle="tab">Modules</a></li>
+        </ul>
+
+        <!-- Tab panes -->
+        <div class="side-detail tab-content">
+            <div role="tabpanel" class="tab-pane fade in active" id="layouts">
+                <ul class="side-menu-sub">
+                    <li><a href="#layouts-front">Front Page</a></li>
+                </ul>
+            </div>
+            <div role="tabpanel" class="tab-pane fade" id="base">
+                <ul class="side-menu-sub">
+                    <li><a href="#base-jquery">jQuery</a></li>
+                    <li><a href="#base-bootstrap">Bootstrap</a></li>
+                    <li><a href="#base-viewport">Viewport</a></li>
+                </ul>
+            </div>
+            <div role="tabpanel" class="tab-pane fade" id="grids">
+                <ul class="side-menu-sub">
+                    <li><a href="#grids-container">Container</a></li>
+                    <li><a href="#grids-mediaqueries">MediaQueries</a></li>
+                    <li><a href="#grids-default">Default</a></li>
+                </ul>
+            </div>
+            <div role="tabpanel" class="tab-pane fade" id="forms">
+                <ul class="side-menu-sub">
+                    <li><a href="#forms-default">Default</a></li>
+                    <li><a href="#forms-option">Option</a></li>
+                </ul>
+            </div>
+            <div role="tabpanel" class="tab-pane fade" id="buttons">
+                <ul class="side-menu-sub">
+                    <li><a href="#buttons-default">Default</a></li>
+                    <li><a href="#buttons-color">Color</a></li>
+                    <li><a href="#buttons-size">Size</a></li>
+                    <li><a href="#buttons-icon">Icon</a></li>
+                </ul>
+            </div>
+            <div role="tabpanel" class="tab-pane fade" id="tables">
+                <ul class="side-menu-sub">
+                    <li><a href="#tables-default">Default</a></li>
+                    <li><a href="#tables-option">Option</a></li>
+                </ul>
+            </div>
+            <div role="tabpanel" class="tab-pane fade" id="menus">
+                <ul class="side-menu-sub">
+                    <li><a href="#menus-vertical">Vertical</a></li>
+                    <li><a href="#menus-horizontal">Horizontal</a></li>
+                </ul>
+            </div>
+            <div role="tabpanel" class="tab-pane fade" id="text">
+                <ul class="side-menu-sub">
+                    <li><a href="#text-title">Title</a></li>
+                    <li><a href="#text-link">Link</a></li>
+                </ul>
+            </div>
+            <div role="tabpanel" class="tab-pane fade" id="modules">
+                <ul class="side-menu-sub">
+                    <li><a href="#modules-card">Card</a></li>
+                    <li><a href="#modules-pagination">Pagination</a></li>
+                    <li><a href="#modules-pankuzu">Pankuzu</a></li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="main">
+
+        <div class="main-title">
+            <div class="title-body">
+                <div class="logo"><img src="images/logo.png" alt="" /></div>
+                <h1 class="title">スタイルガイド</h1>
+            </div>
+        </div>
+
+        <div class="main-content">
+
+
+
+
+
+<!------------------------------ Layouts ------------------------------>
+
+            <div class="content-area container">
+                <h2 class="content-head">Layouts<span>新規作成するには、以下のテンプレートを読み込み、<br>必要に応じてスタイルガイドの各モジュールを参照してください。</span></h2>
+                <div class="content-body">
+
+                    <ul id="layouts-area">
+                        <li id="layouts-front">
+                            <dl>
+                                <dt><img src="images/img-layouts-01.png" alt="" /></dt>
+                                <dd>
+                                    <h3 class="title">Front Page</h3>
+                                    <p class="text">Front Pageのテンプレートです。<br>以下の「詳細」からレイアウトをできます。<br>※スマホサイズデータはspフォルダ内にあります。</p>
+                                    <div class="buttons-col-02">
+                                        <div class="button-area">
+                                            <a class="button button-small button-red button-icon-right" href="layouts/front/index.html" target="_blank">詳細<i class="fa fa-angle-right"></i></a>
+                                        </div>
+                                        <div class="button-area">
+                                            <a class="button button-small button-white button-icon-right" href="layouts/front.zip" download>ダウンロード<i class="fa fa-angle-right"></i></a>
+                                        </div>
+                                    </div>
+                                </dd>
+                            </dl>
+                        </li>
+                    </ul>
+
+                    <style>
+                        #layouts-area { list-style-type: none; padding: 0; margin: 30px 0 0; }
+                        #layouts-area li { padding: 30px 0; }
+                        #layouts-area li:last-child { padding-bottom: 0; }
+                        #layouts-area li dl { margin: 0; }
+                        #layouts-area li dl dt { float: left; width: 300px; height: 170px; overflow: hidden; box-shadow: 0 0 5px rgba(0,0,0,0.15); }
+                        @media (max-width: 1000px) {
+                            #layouts-area li dl dt { width: 100%; height: auto; margin-bottom: 30px; }
+                        }
+                        #layouts-area li dl dt img { width: 100%; }
+                        #layouts-area li dl dd { margin-left: 330px; }
+                        @media (max-width: 1000px) {
+                            #layouts-area li dl dd { margin-left: 0; }
+                        }
+                        #layouts-area li dl dd .title { font-size: 1.5em; line-height: 1.5; margin: 0 0 20px; }
+                        #layouts-area li dl dd .text { line-height: 1.5; margin: 0 0 15px; }
+                        #layouts-area .buttons-col-02 { overflow: hidden; margin-left: -10px; margin-right: -10px; }
+                        #layouts-area .button-area { width: 50%; float: left; padding-left: 10px; padding-right: 10px; }
+                        #layouts-area .button { width: 100%; float: left; display: inline-block; background: #ccc; padding: 15px; color: #333333; border: none; border-radius: 3px; text-align: center; text-decoration: none; }
+                        #layouts-area .button-small { padding: 10px; }
+                        #layouts-area .button-red { background: #ed4e52; color: #ffffff; }
+                        #layouts-area .button-white { background: #ffffff; border: 1px solid #eeeeee; }
+                        #layouts-area .button-icon-right { position: relative; }
+                        #layouts-area .button-icon-right i { position: absolute; top: 50%; right: 15px; transform: translateY(-50%); }
+                    </style>
+
+                </div>
+            </div>
+
+
+
+
+
+<!------------------------------ Base ------------------------------>
+
+            <div class="content-area container">
+                <h2 class="content-head">Base</h2>
+                <div class="content-body">
+
+                    <div id="base-jquery" class="content-body-block">
+                        <h3 class="content-body-title">jQuery</h3>
+                        <p class="content-body-description"><code>&lt;body&gt;</code>要素の終了タグ手間に読み込む。bootstrapを使用するため、<code>bootstrap.min.js</code>の前に設置。</p>
+                        <div class="content-body-code">
+                            <ul class="nav nav-tabs code-tab" role="tablist">
+                                <li role="presentation" class="active"><a href="#" aria-controls="" role="tab" data-toggle="tab">HTML</a></li>
+                            </ul>
+                            <div class="tab-content code-content">
+<!-- html -->
+<div role="tabpanel" class="tab-pane active" id="">
+<pre>
+<code>
+    &lt;script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"&gt;&lt;/script&gt;
+</code>
+</pre>
+</div>
+                        </div>
+                        </div>
+                    </div>
+
+                    <div id="base-bootstrap" class="content-body-block">
+                        <h3 class="content-body-title">Bootstrap</h3>
+                        <p class="content-body-description">Crevo全体のレイアウト／スタイル／スクリプトの標準機能として使用。<br>
+                        <code>&lt;head&gt;</code>要素内に<code>bootstrap.min.css</code>><code>bootstrap.theme.css</code>の順で読み込む。<br>
+                        <code>bootstrap.min.js</code>は<code>&lt;body&gt;</code>要素の終了タグ手間の<code>jquery.min.js</code>の後に読み込む。<br>bootstrapデータ自体は編集せず、後に読み込むスタイルシートに編集コードを記述し、上書きする。</p>
+                        <div class="content-body-code">
+                            <ul class="nav nav-tabs code-tab" role="tablist">
+                                <li role="presentation" class="active"><a href="#" aria-controls="" role="tab" data-toggle="tab">HTML</a></li>
+                            </ul>
+                            <div class="tab-content code-content">
+<!-- html -->
+<div role="tabpanel" class="tab-pane active" id="">
+<pre>
+<code>
+    &lt;!-- bootstrap css --&gt;
+
+    &lt;link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous"&gt;
+
+    &lt;link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css" integrity="sha384-aUGj/X2zp5rLCbBxumKTCw2Z50WgIr1vs/PFN4praOTvYXWlVyh2UtNUU0KAUhAX" crossorigin="anonymous"&gt;
+
+    &lt;!-- bootstrap js --&gt;
+
+    &lt;script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" integrity="sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ==" crossorigin="anonymous"&gt;&lt;/script&gt;
+</code>
+</pre>
+</div>
+                        </div>
+                        </div>
+                    </div>
+
+                    <div id="base-viewport" class="content-body-block">
+                        <h3 class="content-body-title">Viewport</h3>
+                        <p class="content-body-description">端末やブラウザ毎に幅を自動調整させるために、幅を取得し、モバイル端末でのズーム倍数初期値を指定（ズーム可）。<code>&lt;head&gt;</code>要素内に記述。</p>
+                        <div class="content-body-code">
+                            <ul class="nav nav-tabs code-tab" role="tablist">
+                                <li role="presentation" class="active"><a href="#" aria-controls="" role="tab" data-toggle="tab">HTML</a></li>
+                            </ul>
+                            <div class="tab-content code-content">
+<!-- html -->
+<div role="tabpanel" class="tab-pane active" id="">
+<pre>
+<code>
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1"&gt;
+</code>
+</pre>
+</div>
+                        </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+
+
+
+
+<!------------------------------ Grids ------------------------------>
+
+            <div class="content-area container">
+                <h2 class="content-head">Grids</h2>
+                <div class="content-body">
+
+                    <div id="grids-container" class="content-body-block">
+                        <h3 class="content-body-title">Container</h3>
+                        <p class="content-body-description">media queryで端末毎に幅が切り替わる際の、固定のコンテンツ表示領域を指定。<br>
+                        各エリアのコンテンツを<code>.container</code>タグで括る。<br>
+                        PC表示で背景幅100%指定の場合、<code>.container</code>指定要素は背景指定タグの内側で指定。<br>
+                        コンテンツを常時画面幅100%に表示する場合は<code>.container-fluid</code>を使用。</p>
+                        <div class="content-body-code">
+                            <ul class="nav nav-tabs code-tab" role="tablist">
+                                <li role="presentation" class="active"><a href="#grids-container-html" aria-controls="grids-container-html" role="tab" data-toggle="tab">HTML</a></li>
+                            </ul>
+                            <div class="tab-content code-content">
+<!-- html -->
+<div role="tabpanel" class="tab-pane active" id="grids-container-html">
+<pre>
+<code>
+    &lt;div class="container"&gt;
+        ...
+    &lt;/div&gt;
+
+    &lt;div class="container-fluid"&gt;
+        ...
+    &lt;/div&gt;
+</code>
+</pre>
+</div>
+
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <div id="grids-mediaqueries" class="content-body-block">
+                        <h3 class="content-body-title">Media Queries</h3>
+                        <p class="content-body-description">端末ごとにコンテンツ表示幅の切り替わるポイントを指定。<br>
+                        例として<code>@media (max-width: @screen-xs-max) {}</code>の<code>{}</code>にコードを記述した場合、スマートフォン表示サイズのみに対応。<br>
+                        ※モバイルファーストで記述する場合、media queryの記述する順が逆転するので注意。</p>
+                        <div class="content-body-code">
+                            <ul class="nav nav-tabs code-tab" role="tablist">
+                                <li role="presentation" class="active"><a href="#grids-mediaqueries-html" aria-controls="grids-mediaqueries-html" role="tab" data-toggle="tab">HTML</a></li>
+                            </ul>
+                            <div class="tab-content code-content">
+<!-- html -->
+<div role="tabpanel" class="tab-pane active" id="grids-mediaqueries-html">
+<pre>
+<code>
+
+    @media (min-width: @screen-lg-min) { ... }
+    @media (min-width: @screen-md-min) { ... }
+    @media (min-width: @screen-sm-min) { ... }
+    @media (max-width: @screen-xs-max) { ... }
+
+    /* モバイルファーストの場合 */
+
+    /* Extra small devices (phones, less than 768px) */
+    /* No media query since this is the default in Bootstrap */
+
+    /* Small devices (tablets, 768px and up) */
+    @media (min-width: @screen-sm-min) { ... }
+
+    /* Medium devices (desktops, 992px and up) */
+    @media (min-width: @screen-md-min) { ... }
+
+    /* Large devices (large desktops, 1200px and up) */
+    @media (min-width: @screen-lg-min) { ... }
+</code>
+</pre>
+</div>
+
+                        </div>
+                        </div>
+                    </div>
+
+
+
+                    <div id="grids-default" class="content-body-block">
+                        <h3 class="content-body-title">Default</h3>
+                        <p class="content-body-description">特定領域を列（カラム）で分割してレイアウトする際に<code>.col</code>を指定。<br>
+                        <code>.row</code>は<code>.col</code>指定でできた左右の余白を埋めるために指定。</p>
+                        <div class="table-responsive">
+                            <table class="table table-bordered table-striped">
+                              <thead>
+                                <tr>
+                                  <th></th>
+                                  <th>
+                                    Extra small devices
+                                    <small>Phones (&lt;768px)</small>
+                                  </th>
+                                  <th>
+                                    Small devices
+                                    <small>Tablets (&ge;768px)</small>
+                                  </th>
+                                  <th>
+                                    Medium devices
+                                    <small>Desktops (&ge;992px)</small>
+                                  </th>
+                                  <th>
+                                    Large devices
+                                    <small>Desktops (&ge;1200px)</small>
+                                  </th>
+                                </tr>
+                              </thead>
+                              <tbody>
+                                <tr>
+                                  <th class="text-nowrap" scope="row">Grid behavior</th>
+                                  <td>Horizontal at all times</td>
+                                  <td colspan="3">Collapsed to start, horizontal above breakpoints</td>
+                                </tr>
+                                <tr>
+                                  <th class="text-nowrap" scope="row">Container width</th>
+                                  <td>None (auto)</td>
+                                  <td>750px</td>
+                                  <td>970px</td>
+                                  <td>1170px</td>
+                                </tr>
+                                <tr>
+                                  <th class="text-nowrap" scope="row">Class prefix</th>
+                                  <td><code>.col-xs-</code></td>
+                                  <td><code>.col-sm-</code></td>
+                                  <td><code>.col-md-</code></td>
+                                  <td><code>.col-lg-</code></td>
+                                </tr>
+                                <tr>
+                                  <th class="text-nowrap" scope="row"># of columns</th>
+                                  <td colspan="4">12</td>
+                                </tr>
+                                <tr>
+                                  <th class="text-nowrap" scope="row">Column width</th>
+                                  <td class="text-muted">Auto</td>
+                                  <td>~62px</td>
+                                  <td>~81px</td>
+                                  <td>~97px</td>
+                                </tr>
+                                <tr>
+                                  <th class="text-nowrap" scope="row">Gutter width</th>
+                                  <td colspan="4">30px (15px on each side of a column)</td>
+                                </tr>
+                                <tr>
+                                  <th class="text-nowrap" scope="row">Nestable</th>
+                                  <td colspan="4">Yes</td>
+                                </tr>
+                                <tr>
+                                  <th class="text-nowrap" scope="row">Offsets</th>
+                                  <td colspan="4">Yes</td>
+                                </tr>
+                                <tr>
+                                  <th class="text-nowrap" scope="row">Column ordering</th>
+                                  <td colspan="4">Yes</td>
+                                </tr>
+                              </tbody>
+                            </table>
+                        </div>
+                        <div class="content-body-design">
+
+                            <!-- html --> 
+                            <div id="grids-default">
+                                <div class="design-area">
+                                    <div class="row">
+                                        <div class="col col-xs-1">.col-xs-1</div>
+                                        <div class="col col-xs-1">.col-xs-1</div>
+                                        <div class="col col-xs-1">.col-xs-1</div>
+                                        <div class="col col-xs-1">.col-xs-1</div>
+                                        <div class="col col-xs-1">.col-xs-1</div>
+                                        <div class="col col-xs-1">.col-xs-1</div>
+                                        <div class="col col-xs-1">.col-xs-1</div>
+                                        <div class="col col-xs-1">.col-xs-1</div>
+                                        <div class="col col-xs-1">.col-xs-1</div>
+                                        <div class="col col-xs-1">.col-xs-1</div>
+                                        <div class="col col-xs-1">.col-xs-1</div>
+                                        <div class="col col-xs-1">.col-xs-1</div>
+                                    </div>
+                                </div>
+                                <div class="design-area">
+                                    <div class="row">
+                                        <div class="col col-xs-8">.col-xs-8</div>
+                                        <div class="col col-xs-4">.col-xs-4</div>
+                                    </div>
+                                </div>
+                                <div class="design-area">
+                                    <div class="row">
+                                        <div class="col col-xs-4">.col-xs-4</div>
+                                        <div class="col col-xs-4">.col-xs-4</div>
+                                        <div class="col col-xs-4">.col-xs-4</div>
+                                    </div>
+                                </div>
+                                <div class="design-area">
+                                    <div class="row">
+                                        <div class="col col-xs-6">.col-xs-6</div>
+                                        <div class="col col-xs-6">.col-xs-6</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- css -->
+                            <style>
+                                #grids-default .col { background: #fafafa; border: 1px solid #eeeeee; overflow: hidden; }
+                            </style>
+
+                            <!-- javscript --> 
+                            <script></script>
+
+                        </div>
+                        <div class="content-body-code">
+                            <ul class="nav nav-tabs code-tab" role="tablist">
+                                <li role="presentation" class="active"><a href="#grids-default-html" aria-controls="grids-default-html" role="tab" data-toggle="tab">HTML</a></li>
+                                <li role="presentation"><a href="#grids-default-css" aria-controls="grids-default-css" role="tab" data-toggle="tab">CSS</a></li>
+                            </ul>
+                            <div class="tab-content code-content">
+<!-- html -->
+<div role="tabpanel" class="tab-pane fade in active" id="grids-default-html">
+<pre>
+<code>
+    &lt;div class="row"&gt;
+        &lt;div class="col col-xs-1"&gt;.col-xs-1&lt;/div&gt;
+        &lt;div class="col col-xs-1"&gt;.col-xs-1&lt;/div&gt;
+        &lt;div class="col col-xs-1"&gt;.col-xs-1&lt;/div&gt;
+        &lt;div class="col col-xs-1"&gt;.col-xs-1&lt;/div&gt;
+        &lt;div class="col col-xs-1"&gt;.col-xs-1&lt;/div&gt;
+        &lt;div class="col col-xs-1"&gt;.col-xs-1&lt;/div&gt;
+        &lt;div class="col col-xs-1"&gt;.col-xs-1&lt;/div&gt;
+        &lt;div class="col col-xs-1"&gt;.col-xs-1&lt;/div&gt;
+        &lt;div class="col col-xs-1"&gt;.col-xs-1&lt;/div&gt;
+        &lt;div class="col col-xs-1"&gt;.col-xs-1&lt;/div&gt;
+        &lt;div class="col col-xs-1"&gt;.col-xs-1&lt;/div&gt;
+        &lt;div class="col col-xs-1"&gt;.col-xs-1&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="row"&gt;
+        &lt;div class="col col-xs-8"&gt;.col-xs-8&lt;/div&gt;
+        &lt;div class="col col-xs-4"&gt;.col-xs-4&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="row"&gt;
+        &lt;div class="col col-xs-4"&gt;.col-xs-4&lt;/div&gt;
+        &lt;div class="col col-xs-4"&gt;.col-xs-4&lt;/div&gt;
+        &lt;div class="col col-xs-4"&gt;.col-xs-4&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="row"&gt;
+        &lt;div class="col col-xs-6"&gt;.col-xs-6&lt;/div&gt;
+        &lt;div class="col col-xs-6"&gt;.col-xs-6&lt;/div&gt;
+    &lt;/div&gt;
+</code>
+</pre>
+</div>
+<!-- css -->
+<div role="tabpanel" class="tab-pane fade" id="grids-default-css">
+<pre>
+<code>
+    .col {
+        background: #fafafa;
+        border: 1px solid #eeeeee;
+        overflow: hidden;
+    }
+</code>
+</pre>
+</div>
+                        </div>
+                        </div>
+                    </div>
+
+
+
+                </div>
+            </div>
+
+
+
+
+
+<!------------------------------ Forms ------------------------------>
+
+            <div class="content-area container">
+                <h2 class="content-head">Forms</h2>
+                <div class="content-body">
+
+                    <div id="forms-default" class="content-body-block">
+                        <h3 class="content-body-title">Default</h3>
+                        <p class="content-body-description">フォーム作成時のベースとなる要素。</p>
+                        <div class="content-body-design">
+
+                            <!-- html -->
+                            <div id="mod-forms-default">
+                                <div class="design-area">
+                                    <div class="form-head">
+                                        <div class="form-title">ログイン</div>
+                                    </div>
+                                    <div class="form-body">
+                                        <form>
+                                            <div class="form-group">
+                                                <label for="email">E-mailアドレス</label>
+                                                <input type="text" name="email" placeholder="Email" class="form-control" />
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="password">パスワード</label>
+                                                <input type="password" name="password" placeholder="Password" class="form-control" />
+                                            </div>
+                                            <div class="form-buttons buttons-col-02">
+                                                <div class="button-area"><a class="button button-white button-full" href="#">White</a></div>
+                                                <div class="button-area"><a class="button button-red button-full" href="#">Red</a></div>
+                                            </div>
+                                            <div class="form-buttons buttons-col-01">
+                                                <div class="button-area"><a class="button button-green" href="#">Green</a></div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- css -->
+                            <style>
+                                #mod-forms-default .form-head { width: 100%; text-align: center; padding: 20px 40px; background: #fafafa; border: 1px solid #eeeeee; border-bottom: none; border-radius: 3px 3px 0 0; }
+                                #mod-forms-default .form-title { font-size: 1.5em; font-weight: bold; }
+                                #mod-forms-default .form-body { width: 100%; padding: 40px; background: #fafafa; border: 1px solid #eeeeee; border-radius: 0 0 3px 3px;}
+                                #mod-forms-default .form-group { margin-bottom: 20px; overflow: hidden; }
+                                #mod-forms-default .form-group:last-child { margin-bottom: 0; }
+                                #mod-forms-default .form-group label { float: left; margin-bottom: 10px; }
+                                #mod-forms-default .form-buttons { padding-top: 20px; }
+                                #mod-forms-default .buttons-col-01 { text-align: center; }
+                                #mod-forms-default .buttons-col-02 { overflow: hidden; margin-left: -10px; margin-right: -10px; }
+                                #mod-forms-default .buttons-col-02 .button-area { width: 50%; float: left; padding-left: 10px; padding-right: 10px; }
+                                #mod-forms-default .button { display: inline-block; background: #ccc; width: 300px; padding: 15px; color: #333333; border: none; border-radius: 3px; text-align: center; text-decoration: none; }
+                                #mod-forms-default .button-red { background: #ed4e52; color: #ffffff; }
+                                #mod-forms-default .button-green { background: #00a0a5; color: #ffffff; }
+                                @media (max-width: 1000px) {
+                                    #mod-forms-default .button-green { width: 100%; }
+                                }
+                                #mod-forms-default .button-white { background: #ffffff; border: 1px solid #eeeeee; }
+                                #mod-forms-default .button-full { width: 100%; }
+                            </style>
+
+                            <!-- javscript -->
+                            <script></script>
+
+                        </div>
+                        <div class="content-body-code">
+                            <ul class="nav nav-tabs code-tab" role="tablist">
+                                <li role="presentation" class="active"><a href="#forms-default-html" aria-controls="forms-default-html" role="tab" data-toggle="tab">HTML</a></li>
+                                <li role="presentation"><a href="#forms-default-css" aria-controls="forms-default-css" role="tab" data-toggle="tab">CSS</a></li>
+                            </ul>
+                            <div class="tab-content code-content">
+<!-- html -->
+<div role="tabpanel" class="tab-pane fade in active" id="forms-default-html">
+<pre>
+<code>
+    &lt;div class="form-head"&gt;
+        &lt;div class="form-title"&gt;ログイン&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="form-body"&gt;
+        &lt;form&gt;
+            &lt;div class="form-group"&gt;
+                &lt;label for="email"&gt;E-mailアドレス&lt;/label&gt;
+                &lt;input type="text" name="email" placeholder="Email" class="form-control" /&gt;
+            &lt;/div&gt;
+            &lt;div class="form-group"&gt;
+                &lt;label for="password"&gt;パスワード&lt;/label&gt;
+                &lt;input type="password" name="password" placeholder="Password" class="form-control" /&gt;
+            &lt;/div&gt;
+            &lt;div class="form-buttons buttons-col-02"&gt;
+                &lt;div class="button-area"&gt;&lt;a class="button button-white button-full" href="#"&gt;White&lt;/a&gt;&lt;/div&gt;
+                &lt;div class="button-area"&gt;&lt;a class="button button-red button-full" href="#"&gt;Red&lt;/a&gt;&lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class="form-buttons buttons-col-01"&gt;
+                &lt;div class="button-area"&gt;&lt;a class="button button-green" href="#"&gt;Green&lt;/a&gt;&lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/form&gt;
+    &lt;/div&gt;
+</code>
+</pre>
+</div>
+<!-- css -->
+<div role="tabpanel" class="tab-pane fade" id="forms-default-css">
+<pre>
+<code>
+    .form-head {
+        width: 100%;
+        text-align: center;
+        padding: 20px 40px;
+        background: #fafafa;
+        border: 1px solid #eeeeee;
+        border-bottom: none;
+        border-radius: 3px 3px 0 0;
+    }
+    .form-title {
+        font-size: 1.5em;
+        font-weight: bold;
+    }
+    .form-body {
+        width: 100%;
+        padding: 40px;
+        background: #fafafa;
+        border: 1px solid #eeeeee;
+        border-radius: 0 0 3px 3px;
+    }
+    .form-group {
+        margin-bottom: 20px;
+        overflow: hidden;
+    }
+    .form-group:last-child {
+        margin-bottom: 0;
+    }
+    .form-group label {
+        float: left;
+        margin-bottom: 10px;
+    }
+    .form-buttons {
+        padding-top: 20px;
+    }
+    .buttons-col-02 {
+        overflow: hidden;
+        margin-left: -10px;
+        margin-right: -10px;
+    }
+    .buttons-col-02 .button-area {
+        width: 50%;
+        float: left;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .button {
+        display: inline-block;
+        background: #ccc;
+        width: 300px;
+        padding: 15px;
+        color: #333333;
+        border: none;
+        border-radius: 3px;
+        text-align: center;
+        text-decoration: none;
+    }
+    .button-red {
+        background: #ed4e52;
+        color: #ffffff;
+    }
+    .button-green {
+        background: #00a0a5;
+        color: #ffffff;
+    }
+    .button-full {
+        width: 100%;
+    }
+</code>
+</pre>
+</div>
+                        </div>
+                        </div>
+                    </div>
+
+                    <div id="forms-option" class="content-body-block">
+                        <h3 class="content-body-title">Option</h3>
+                        <p class="content-body-description">フォーム作成時のベース＋装飾追加する際の記述。</p>
+                        <div class="content-body-design">
+
+                            <!-- html -->
+                            <div id="mod-forms-option">
+                                <div class="design-area">
+                                    <div class="form-head">
+                                        <div class="form-title">ログイン</div>
+                                    </div>
+                                    <div class="form-body">
+                                        <form>
+                                            <div class="form-group form-col-02">
+                                                <div class="form-area">
+                                                    <label for="last-name">姓</label><span class="form-tag">テキスト</span>
+                                                    <input type="text" name="last-name" placeholder="山田" class="form-control" />
+                                                </div>
+                                                <div class="form-area">
+                                                    <label for="first-name">名</label><span class="form-tag">テキスト</span>
+                                                    <input type="text" name="first-name" placeholder="太郎" class="form-control" />
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="email">E-mailアドレス</label><span class="form-tag tag-red">必須</span>
+                                                <input type="text" name="email" placeholder="Email" class="form-control" />
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="password">パスワード</label><span class="form-tag tag-blue">任意</span>
+                                                <input type="password" name="password" placeholder="Password" class="form-control" />
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="country">国籍</label>
+                                                <select class="form-control" name="user[country_id]" id="user_country_id">
+                                                    <option value=""><span class="translation_missing" title="">Select Country</span></option>
+                                                    <option data-country-code="JP" selected="selected" value="01">日本</option>
+                                                    <option data-country-code="US" value="02">United States</option>
+                                                    <option data-country-code="ES" value="03">Spain</option>
+                                                </select>
+                                            </div>
+                                            <div class="form-group">
+                                                <div class="form-group-title">
+                                                    <label for="language">言語</label>
+                                                </div>
+                                                <label class="selector radio-inline" for="user_language_id_1">
+                                                    <input required="required" type="radio" value="1" name="user[language_id]" id="user_language_id_1" />
+                                                    日本語
+                                                </label>
+                                                <label class="selector radio-inline" for="user_language_id_2">
+                                                    <input required="required" type="radio" value="2" checked="checked" name="user[language_id]" id="user_language_id_2" />
+                                                    英語
+                                                </label>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- css -->
+                            <style>
+                                #mod-forms-option .form-head { width: 100%; text-align: center; padding: 20px 40px; background: #fafafa; border: 1px solid #eeeeee; border-bottom: none; border-radius: 3px 3px 0 0; }
+                                #mod-forms-option .form-title { font-size: 1.5em; font-weight: bold; }
+                                #mod-forms-option .form-body { width: 100%; padding: 40px; background: #fafafa; border: 1px solid #eeeeee; border-radius: 0 0 3px 3px;}
+                                #mod-forms-option .form-group { margin-bottom: 20px; overflow: hidden; }
+                                #mod-forms-option .form-group:last-child { margin-bottom: 0; }
+                                #mod-forms-option .form-group label { float: left; margin-bottom: 10px; }
+                                #mod-forms-option .form-group-title { overflow: hidden; }
+                                #mod-forms-option input[type=checkbox],
+                                #mod-forms-option input[type=radio] { margin-top: 3px; margin-left: -19px; }
+                                #mod-forms-option .form-col-02 { overflow: hidden; margin-left: -10px; margin-right: -10px; }
+                                #mod-forms-option .form-col-02 .form-area { float: left; width: 50%; padding-left: 10px; padding-right: 10px; }
+                                #mod-forms-option .form-tag { float: left; padding: 0 10px; background: #cccccc; border-radius: 3px; font-size: 0.8em; margin-left: 10px; line-height: 1; height: 20px; line-height: 20px; }
+                                #mod-forms-option .tag-red { background: #ed4e52; color: #ffffff; }
+                                #mod-forms-option .tag-blue { background: #61bbf5; color: #ffffff; }
+                            </style>
+
+                            <!-- javscript -->
+                            <script></script>
+
+                        </div>
+                        <div class="content-body-code">
+                            <ul class="nav nav-tabs code-tab" role="tablist">
+                                <li role="presentation" class="active"><a href="#forms-option-html" aria-controls="forms-option-html" role="tab" data-toggle="tab">HTML</a></li>
+                                <li role="presentation"><a href="#forms-option-css" aria-controls="forms-option-css" role="tab" data-toggle="tab">CSS</a></li>
+                            </ul>
+                            <div class="tab-content code-content">
+<!-- html -->
+<div role="tabpanel" class="tab-pane fade in active" id="forms-option-html">
+<pre>
+<code>
+    &lt;div class="form-head"&gt;
+        &lt;div class="form-title"&gt;ログイン&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="form-body"&gt;
+        &lt;form&gt;
+            &lt;div class="form-group form-col-02"&gt;
+                &lt;div class="form-area"&gt;
+                    &lt;label for="last-name"&gt;姓&lt;/label&gt;&lt;span class="form-tag"&gt;テキスト&lt;/span&gt;
+                    &lt;input type="text" name="last-name" placeholder="山田" class="form-control" /&gt;
+                &lt;/div&gt;
+                &lt;div class="form-area"&gt;
+                    &lt;label for="first-name"&gt;名&lt;/label&gt;&lt;span class="form-tag"&gt;テキスト&lt;/span&gt;
+                    &lt;input type="text" name="first-name" placeholder="太郎" class="form-control" /&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class="form-group"&gt;
+                &lt;label for="email"&gt;E-mailアドレス&lt;/label&gt;&lt;span class="form-tag tag-red"&gt;必須&lt;/span&gt;
+                &lt;input type="text" name="email" placeholder="Email" class="form-control" /&gt;
+            &lt;/div&gt;
+            &lt;div class="form-group"&gt;
+                &lt;label for="password"&gt;パスワード&lt;/label&gt;&lt;span class="form-tag tag-blue"&gt;任意&lt;/span&gt;
+                &lt;input type="password" name="password" placeholder="Password" class="form-control" /&gt;
+            &lt;/div&gt;
+            &lt;div class="form-group"&gt;
+                &lt;label for="country"&gt;国籍&lt;/label&gt;
+                &lt;select class="form-control" name="user[country_id]" id="user_country_id"&gt;
+                    &lt;option value=""&gt;&lt;span class="translation_missing" title=""&gt;Select Country&lt;/span&gt;&lt;/option&gt;
+                    &lt;option data-country-code="JP" selected="selected" value="01"&gt;日本&lt;/option&gt;
+                    &lt;option data-country-code="US" value="02"&gt;United States&lt;/option&gt;
+                    &lt;option data-country-code="ES" value="03"&gt;Spain&lt;/option&gt;
+                &lt;/select&gt;
+            &lt;/div&gt;
+            &lt;div class="form-group"&gt;
+                &lt;div class="form-group-title"&gt;
+                    &lt;label for="language"&gt;言語&lt;/label&gt;
+                &lt;/div&gt;
+                &lt;label class="selector radio-inline" for="user_language_id_1"&gt;
+                    &lt;input required="required" type="radio" value="1" name="user[language_id]" id="user_language_id_1" /&gt;
+                    日本語
+                &lt;/label&gt;
+                &lt;label class="selector radio-inline" for="user_language_id_2"&gt;
+                    &lt;input required="required" type="radio" value="2" checked="checked" name="user[language_id]" id="user_language_id_2" /&gt;
+                    英語
+                &lt;/label&gt;
+            &lt;/div&gt;
+        &lt;/form&gt;
+    &lt;/div&gt;
+</code>
+</pre>
+</div>
+<!-- css -->
+<div role="tabpanel" class="fade tab-pane" id="forms-option-css">
+<pre>
+<code>
+    .form-head {
+        width: 100%;
+        text-align: center;
+        padding: 20px 40px;
+        background: #fafafa;
+        border: 1px solid #eeeeee;
+        border-bottom: none;
+        border-radius: 3px 3px 0 0;
+    }
+    .form-title {
+        font-size: 1.5em;
+        font-weight: bold;
+    }
+    .form-body {
+        width: 100%;
+        padding: 40px;
+        background: #fafafa;
+        border: 1px solid #eeeeee;
+        border-radius: 0 0 3px 3px;
+    }
+    .form-group {
+        margin-bottom: 20px;
+        overflow: hidden;
+    }
+    .form-group:last-child {
+        margin-bottom: 0;
+    }
+    .form-group label {
+        float: left;
+        margin-bottom: 10px;
+    }
+    .form-group-title {
+        overflow: hidden;
+    }
+    input[type=checkbox],
+    input[type=radio] {
+        margin-top: 3px;
+        margin-left: -19px;
+    }
+    .form-col-02 {
+        overflow: hidden;
+        margin-left: -10px;
+        margin-right: -10px;
+    }
+    .form-col-02 .form-area {
+        float: left;
+        width: 50%;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .form-tag {
+        float: left;
+        padding: 0 10px;
+        background: #cccccc;
+        border-radius: 3px;
+        font-size: 0.8em;
+        margin-left: 10px;
+        line-height: 1;
+        height: 20px;
+        line-height: 20px;
+    }
+    .tag-red {
+        background: #ed4e52;
+        color: #ffffff;
+    }
+    .tag-blue {
+        background: #61bbf5;
+        color: #ffffff;
+    }
+</code>
+</pre>
+</div>
+                        </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+
+
+
+
+<!-------------------- Buttons -------------------->
+
+            <div class="content-area container">
+                <h2 class="content-head">Buttons</h2>
+                <div class="content-body">
+
+                    <div id="buttons-default" class="content-body-block">
+                        <h3 class="content-body-title">Default</h3>
+                        <p class="content-body-description">Buttonを使用するには、<code>&lt;a&gt;</code>または<code>&lt;button&gt;</code>要素に<code>.button</code>クラスを記述。</p>
+                        <div class="content-body-design">
+
+                            <!-- html -->
+                            <div id="mod-buttons-default">
+                                <div class="design-area"><a class="button" href="#">Button</a></div>
+                                <div class="design-area"><button class="button" href="#">Button</button></div>
+                            </div>
+
+                            <!-- css -->
+                            <style>
+                                #mod-buttons-default .button { display: inline-block; background: #ccc; width: 300px; padding: 15px; color: #333333; border: none; border-radius: 3px; text-align: center; text-decoration: none; }
+                            </style>
+
+                        </div>
+                        <div class="content-body-code">
+                            <ul class="nav nav-tabs code-tab" role="tablist">
+                                <li role="presentation" class="active"><a href="#buttons-default-html" aria-controls="buttons-default-html" role="tab" data-toggle="tab">HTML</a></li>
+                                <li role="presentation"><a href="#buttons-default-css" aria-controls="buttons-default-css" role="tab" data-toggle="tab">CSS</a></li>
+                            </ul>
+                            <div class="tab-content code-content">
+<!-- html -->
+<div role="tabpanel" class="tab-pane fade in active" id="buttons-default-html">
+<pre>
+<code>
+    &lt;a class="button" href="#"&gt;Button&lt;/a&gt;
+    &lt;button class="button" href="#"&gt;Button&lt;/button&gt;
+</code>
+</pre>
+</div>
+<!-- css -->
+<div role="tabpanel" class="tab-pane fade" id="buttons-default-css">
+<pre>
+<code>
+    .button {
+        display: inline-block;
+        background: #ccc;
+        width: 300px;
+        padding: 15px;
+        color: #333333;
+        border: none;
+        border-radius: 3px;
+        text-align: center;
+        text-decoration: none;
+    }
+</code>
+</pre>
+</div>
+                        </div>
+                        </div>
+                    </div>
+
+
+
+                    <div id="buttons-color" class="content-body-block">
+                        <h3 class="content-body-title">Color</h3>
+                        <p class="content-body-description">標準スタイルの<code>.button</code>クラスを指定し、その後に追加でカラー指定のクラスを記述。</p>
+                        <div class="content-body-design">
+
+                            <!-- html -->
+                            <div id="mod-buttons-color">
+                                <div class="design-area"><a class="button button-red" href="#">Red</a></div>
+                                <div class="design-area"><a class="button button-green" href="#">Green</a></div>
+                                <div class="design-area"><a class="button button-white" href="#">White</a></div>
+                            </div>
+
+                            <!-- css -->
+                            <style>
+                                #mod-buttons-color .button { display: inline-block; background: #ccc; width: 300px; padding: 15px; color: #333333; border: none; border-radius: 3px; text-align: center; text-decoration: none; }
+                                #mod-buttons-color .button-red { background: #ed4e52; color: #ffffff; }
+                                #mod-buttons-color .button-green { background: #00a0a5; color: #ffffff; }
+                                #mod-buttons-color .button-white { background: #ffffff; border: 1px solid #eeeeee; }
+                            </style>
+
+                        </div>
+                        <div class="content-body-code">
+                            <ul class="nav nav-tabs code-tab" role="tablist">
+                                <li role="presentation" class="active"><a href="#buttons-color-html" aria-controls="buttons-color-html" role="tab" data-toggle="tab">HTML</a></li>
+                                <li role="presentation"><a href="#buttons-color-css" aria-controls="buttons-color-css" role="tab" data-toggle="tab">CSS</a></li>
+                            </ul>
+                            <div class="tab-content code-content">
+<!-- html -->
+<div role="tabpanel" class="tab-pane fade in active" id="buttons-color-html">
+<pre>
+<code>
+    &lt;a class="button button-red" href="#"&gt;Red&lt;/a&gt;
+    &lt;a class="button button-green" href="#"&gt;Green&lt;/a&gt;
+    &lt;a class="button button-white" href="#"&gt;White&lt;/a&gt;
+</code>
+</pre>
+</div>
+<!-- css -->
+<div role="tabpanel" class="tab-pane fade" id="buttons-color-css">
+<pre>
+<code>
+    .button {
+        display: inline-block;
+        background: #ccc;
+        width: 300px;
+        padding: 15px;
+        color: #333333;
+        border: none;
+        border-radius: 3px;
+        text-align: center;
+        text-decoration: none;
+    }
+    .button-red {
+        background: #ed4e52;
+        color: #ffffff;
+    }
+    .button-green {
+        background: #00a0a5;
+        color: #ffffff;
+    }
+    .button-white {
+        background: #ffffff;
+        border: 1px solid #eeeeee;
+    }
+</code>
+</pre>
+</div>
+                        </div>
+                        </div>
+                    </div>
+
+
+
+                    <div id="buttons-size" class="content-body-block">
+                        <h3 class="content-body-title">Size</h3>
+                        <p class="content-body-description">標準スタイルの<code>.button</code>クラスを指定し、その後に追加でサイズ指定のクラスを記述。</p>
+                        <div class="content-body-design">
+
+                            <!-- html -->
+                            <div id="mod-buttons-size">
+                                <div class="design-area"><a class="button button-small" href="#">Small</a></div>
+                                <div class="design-area"><a class="button button-large" href="#">Large</a></div>
+                                <div class="design-area"><a class="button button-full" href="#">Full</a></div>
+                            </div>
+
+                            <!-- css -->
+                            <style>
+                                #mod-buttons-size .button { display: inline-block; background: #ccc; width: 300px; padding: 15px; color: #333333; border: none; border-radius: 3px; text-align: center; text-decoration: none; }
+                                #mod-buttons-size .button-small { padding: 10px; width: 200px; }
+                                #mod-buttons-size .button-large { width: 400px; }
+                                #mod-buttons-size .button-full { width: 100%; }
+                                @media (max-width: 1000px) {
+                                    #mod-buttons-size .button-large { width: 100%; }
+                                }
+                            </style>
+
+                        </div>
+                        <div class="content-body-code">
+                            <ul class="nav nav-tabs code-tab" role="tablist">
+                                <li role="presentation" class="active"><a href="#buttons-size-html" aria-controls="buttons-size-html" role="tab" data-toggle="tab">HTML</a></li>
+                                <li role="presentation"><a href="#buttons-size-css" aria-controls="buttons-size-css" role="tab" data-toggle="tab">CSS</a></li>
+                            </ul>
+                            <div class="tab-content code-content">
+<!-- html -->
+<div role="tabpanel" class="tab-pane fade in active" id="buttons-size-html">
+<pre>
+<code>
+    &lt;a class="button button-small" href="#"&gt;Small&lt;/a&gt;
+    &lt;a class="button button-large" href="#"&gt;Large&lt;/a&gt;
+    &lt;a class="button button-full" href="#"&gt;Full&lt;/a&gt;
+</code>
+</pre>
+</div>
+<!-- css -->
+<div role="tabpanel" class="tab-pane fade" id="buttons-size-css">
+<pre>
+<code>
+    .button {
+        display: inline-block;
+        background: #ccc;
+        width: 300px;
+        padding: 15px;
+        color: #333333;
+        border: none;
+        border-radius: 3px;
+        text-align: center;
+        text-decoration: none;
+    }
+    .button-small {
+        padding: 10px;
+        width: 200px;
+    }
+    .button-large {
+        width: 400px;
+    }
+    .button-full {
+        width: 100%;
+    }
+    @media (max-width: 1000px) {
+        #mod-buttons-size .button-large {
+            width: 100%;
+        }
+    }
+</code>
+</pre>
+</div>
+                        </div>
+                        </div>
+                    </div>
+
+
+
+                    <div id="buttons-icon" class="content-body-block">
+                        <h3 class="content-body-title">Icon</h3>
+                        <p class="content-body-description">アイコンはcssの擬似要素での指定は避け、<code>.button</code>クラス要素内に<code>&lt;i&gt;</code>タグを追加して指定。<br>※説明の都合上、アイコンはFontAwesomeを使用しています。</p>
+                        <div class="content-body-design">
+
+                            <!-- html -->
+                            <div id="mod-buttons-icon">
+                                <div class="design-area"><a class="button button-icon-right" href="#">Icon-Right<i class="fa fa-angle-right"></i></a></div>
+                                <div class="design-area"><a class="button button-icon-centerRight" href="#">Icon-CetnerRight<i class="fa fa-angle-right"></i></a></div>
+                                <div class="design-area"><a class="button button-icon-centerLeft" href="#"><i class="fa fa-angle-right"></i>Icon-CetnerLeft</a></div>
+                            </div>
+
+                            <!-- css -->
+                            <style>
+                                #mod-buttons-icon .button { display: inline-block; background: #ccc; width: 300px; padding: 15px; color: #333333; border: none; border-radius: 3px; text-align: center; text-decoration: none; }
+                                #mod-buttons-icon .button-icon-right { position: relative; }
+                                #mod-buttons-icon .button-icon-right i { position: absolute; top: 50%; right: 15px; transform: translateY(-50%); }
+                                #mod-buttons-icon .button-icon-centerRight { padding-left: 40px; }
+                                #mod-buttons-icon .button-icon-centerRight i { width: 20px; margin-left: 5px; }
+                                 #mod-buttons-icon .button-icon-centerLeft { padding-right: 40px; }
+                                #mod-buttons-icon .button-icon-centerLeft i { width: 20px; margin-right: 5px; }
+                            </style>
+
+                        </div>
+                        <div class="content-body-code">
+                            <ul class="nav nav-tabs code-tab" role="tablist">
+                                <li role="presentation" class="active"><a href="#buttons-icon-html" aria-controls="buttons-icon-html" role="tab" data-toggle="tab">HTML</a></li>
+                                <li role="presentation"><a href="#buttons-icon-css" aria-controls="buttons-icon-css" role="tab" data-toggle="tab">CSS</a></li>
+                            </ul>
+                            <div class="tab-content code-content">
+<!-- html -->
+<div role="tabpanel" class="tab-pane fade in active" id="buttons-icon-html">
+<pre>
+<code>
+    &lt;a class="button button-icon-right" href="#"&gt;
+        Icon-Right
+        &lt;i class="fa fa-angle-right"&gt;&lt;/i&gt;
+    &lt;/a&gt;
+    &lt;a class="button button-icon-centerRight" href="#"&gt;
+        Icon-CetnerRight
+        &lt;i class="fa fa-angle-right"&gt;&lt;/i&gt;
+    &lt;/a&gt;
+    &lt;a class="button button-icon-centerLeft" href="#"&gt;
+        Icon-CetnerLeft
+        &lt;i class="fa fa-angle-right"&gt;&lt;/i&gt;
+    &lt;/a&gt;
+</code>
+</pre>
+</div>
+<!-- css -->
+<div role="tabpanel" class="tab-pane fade" id="buttons-icon-css">
+<pre>
+<code>
+    .button {
+        display: inline-block;
+        background: #ccc;
+        width: 300px;
+        padding: 15px;
+        color: #333333;
+        border: none;
+        border-radius: 3px;
+        text-align: center;
+        text-decoration: none;
+    }
+    .button-icon-right {
+        position: relative;
+    }
+    .button-icon-right i {
+        position: absolute;
+        top: 50%;
+        right: 15px;
+        transform: translateY(-50%);
+    }
+    .button-icon-centerRight {
+        padding-left: 40px;
+    }
+    .button-icon-centerRight i {
+        width: 20px;
+        margin-left: 5px;
+    }
+    .button-icon-centerLeft {
+        padding-right: 40px;
+    }
+    .button-icon-centerLeft i {
+        width: 20px;
+        margin-right: 5px;
+    }
+</code>
+</pre>
+</div>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+<!-------------------- Tables -------------------->
+
+            <div class="content-area container">
+                <h2 class="content-head">Tables</h2>
+                <div class="content-body">
+
+                    <div id="tables-default" class="content-body-block">
+                        <h3 class="content-body-title">Default</h3>
+                        <p class="content-body-description">表作成時のベースとなる要素。</p>
+                        <div class="content-body-design">
+
+                            <!-- html --> 
+                            <div id="mod-tables-default">
+                                <table class="table">
+                                    <thead>
+                                        <tr>
+                                            <th>#</th>
+                                            <th>Title-01</th>
+                                            <th>Title-02</th>
+                                            <th>Title-03</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>Text-01</td>
+                                            <td>Text-02</td>
+                                            <td>Text-03</td>
+                                        </tr>
+                                        <tr>
+                                            <td>2</td>
+                                            <td>Text-04</td>
+                                            <td>Text-05</td>
+                                            <td>Text-06</td>
+                                        </tr>
+                                        <tr>
+                                            <td>3</td>
+                                            <td>Text-07</td>
+                                            <td>Text-08</td>
+                                            <td>Text-09</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+
+                            <!-- css -->
+                            <style>
+                                #mod-tables-default .table th { padding: 10px; background: #fafafa; border: 1px solid #eeeeee; }
+                                #mod-tables-default .table td { padding: 10px; border: 1px solid #eeeeee; }
+                            </style>
+
+                        </div>
+                        <div class="content-body-code">
+                            <ul class="nav nav-tabs code-tab" role="tablist">
+                                <li role="presentation" class="active"><a href="#tables-default-html" aria-controls="tables-default-html" role="tab" data-toggle="tab">HTML</a></li>
+                                <li role="presentation"><a href="#tables-default-css" aria-controls="tables-default-css" role="tab" data-toggle="tab">CSS</a></li>
+                            </ul>
+                            <div class="tab-content code-content">
+<!-- html -->
+<div role="tabpanel" class="tab-pane fade in active" id="tables-default-html">
+<pre>
+<code>
+    &lt;table class="table"&gt;
+        &lt;thead&gt;
+            &lt;tr&gt;
+                &lt;th&gt;#&lt;/th&gt;
+                &lt;th&gt;Title-01&lt;/th&gt;
+                &lt;th&gt;Title-02&lt;/th&gt;
+                &lt;th&gt;Title-03&lt;/th&gt;
+            &lt;/tr&gt;
+        &lt;/thead&gt;
+        &lt;tbody&gt;
+            &lt;tr&gt;
+                &lt;td&gt;1&lt;/td&gt;
+                &lt;td&gt;Text-01&lt;/td&gt;
+                &lt;td&gt;Text-02&lt;/td&gt;
+                &lt;td&gt;Text-03&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+                &lt;td&gt;2&lt;/td&gt;
+                &lt;td&gt;Text-04&lt;/td&gt;
+                &lt;td&gt;Text-05&lt;/td&gt;
+                &lt;td&gt;Text-06&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+                &lt;td&gt;3&lt;/td&gt;
+                &lt;td&gt;Text-07&lt;/td&gt;
+                &lt;td&gt;Text-08&lt;/td&gt;
+                &lt;td&gt;Text-09&lt;/td&gt;
+            &lt;/tr&gt;
+        &lt;/tbody&gt;
+    &lt;/table&gt;
+</code>
+</pre>
+</div>
+<!-- css -->
+<div role="tabpanel" class="tab-pane fade" id="tables-default-css">
+<pre>
+<code>
+    .table th {
+        padding: 10px;
+        background: #fafafa;
+        border: 1px solid #eeeeee;
+    }
+    .table td {
+        padding: 10px;
+        border: 1px solid #eeeeee;
+    }
+</code>
+</pre>
+</div>
+                        </div>
+                        </div>
+                    </div>
+
+                    <div id="tables-option" class="content-body-block">
+                        <h3 class="content-body-title">Option</h3>
+                        <p class="content-body-description">画面幅が1000px以下の時、<code>th</code>要素と<code>td</code>要素がblock要素になり、<code>width: 100%;</code>表示に。</p>
+                        <div class="content-body-design">
+
+                            <!-- html --> 
+                            <div id="mod-tables-option">
+                                <table class="table table-break">
+                                    <thead>
+                                        <tr>
+                                            <th>#</th>
+                                            <th>Title-01</th>
+                                            <th>Title-02</th>
+                                            <th>Title-03</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>Text-01</td>
+                                            <td>Text-02</td>
+                                            <td>Text-03</td>
+                                        </tr>
+                                        <tr>
+                                            <td>2</td>
+                                            <td>Text-04</td>
+                                            <td>Text-05</td>
+                                            <td>Text-06</td>
+                                        </tr>
+                                        <tr>
+                                            <td>3</td>
+                                            <td>Text-07</td>
+                                            <td>Text-08</td>
+                                            <td>Text-09</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+
+                            <!-- css -->
+                            <style>
+                                #mod-tables-option .table th { padding: 10px; background: #fafafa; border: 1px solid #eeeeee; }
+                                #mod-tables-option .table td { padding: 10px; border: 1px solid #eeeeee; }
+                                @media (max-width: 1000px) {
+                                    #mod-tables-option .table th,
+                                    #mod-tables-option .table td { display: block; }
+                                }
+                            </style>
+
+                        </div>
+                        <div class="content-body-code">
+                            <ul class="nav nav-tabs code-tab" role="tablist">
+                                <li role="presentation" class="active"><a href="#tables-option-html" aria-controls="tables-option-html" role="tab" data-toggle="tab">HTML</a></li>
+                                <li role="presentation"><a href="#tables-option-css" aria-controls="tables-option-css" role="tab" data-toggle="tab">CSS</a></li>
+                            </ul>
+                            <div class="tab-content code-content">
+<!-- html -->
+<div role="tabpanel" class="tab-pane fade in active" id="tables-option-html">
+<pre>
+<code>
+    &lt;table class="table"&gt;
+        &lt;thead&gt;
+            &lt;tr&gt;
+                &lt;th&gt;#&lt;/th&gt;
+                &lt;th&gt;Title-01&lt;/th&gt;
+                &lt;th&gt;Title-02&lt;/th&gt;
+                &lt;th&gt;Title-03&lt;/th&gt;
+            &lt;/tr&gt;
+        &lt;/thead&gt;
+        &lt;tbody&gt;
+            &lt;tr&gt;
+                &lt;td&gt;1&lt;/td&gt;
+                &lt;td&gt;Text-01&lt;/td&gt;
+                &lt;td&gt;Text-02&lt;/td&gt;
+                &lt;td&gt;Text-03&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+                &lt;td&gt;2&lt;/td&gt;
+                &lt;td&gt;Text-04&lt;/td&gt;
+                &lt;td&gt;Text-05&lt;/td&gt;
+                &lt;td&gt;Text-06&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+                &lt;td&gt;3&lt;/td&gt;
+                &lt;td&gt;Text-07&lt;/td&gt;
+                &lt;td&gt;Text-08&lt;/td&gt;
+                &lt;td&gt;Text-09&lt;/td&gt;
+            &lt;/tr&gt;
+        &lt;/tbody&gt;
+    &lt;/table&gt;
+</code>
+</pre>
+</div>
+<!-- css -->
+<div role="tabpanel" class="tab-pane fade" id="tables-option-css">
+<pre>
+<code>
+    .table th {
+        padding: 10px;
+        background: #fafafa;
+        border: 1px solid #eeeeee;
+    }
+    .table td {
+        padding: 10px;
+        border: 1px solid #eeeeee;
+    }
+</code>
+</pre>
+</div>
+                        </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+
+
+
+
+<!------------------------------ Menus ------------------------------>
+
+            <div class="content-area container">
+                <h2 class="content-head">Menus</h2>
+                <div class="content-body">
+
+                    <div id="menus-vertical" class="content-body-block">
+                        <h3 class="content-body-title">Vertical Menus</h3>
+                        <p class="content-body-description">縦並びのメニュー表示の指定。</p>
+                        <div class="content-body-design">
+
+                            <!-- html --> 
+                            <div id="mod-menus-vertical">
+                                <ul class="menu-vertical">
+                                    <li><a href="#">Menu-01</a></li>
+                                    <li><a href="#">Menu-02</a></li>
+                                    <li><a href="#">Menu-03</a></li>
+                                </ul>
+                            </div>
+
+                            <!-- css -->
+                            <style>
+                                #mod-menus-vertical .menu-vertical { margin: 0; padding: 0; list-style-type: none; }
+                                #mod-menus-vertical .menu-vertical li a { background: #ffffff; padding: 10px; display: block; color: #333333; }
+                                #mod-menus-vertical .menu-vertical li a:hover { background: #fafafa; text-decoration: none; }
+                            </style>
+
+                        </div>
+                        <div class="content-body-code">
+                            <ul class="nav nav-tabs code-tab" role="tablist">
+                                <li role="presentation" class="active"><a href="#menus-vertical-html" aria-controls="menus-vertical-html" role="tab" data-toggle="tab">HTML</a></li>
+                                <li role="presentation"><a href="#menus-vertical-css" aria-controls="menus-vertical-css" role="tab" data-toggle="tab">CSS</a></li>
+                            </ul>
+                            <div class="tab-content code-content">
+<!-- html -->
+<div role="tabpanel" class="tab-pane fade in active" id="menus-vertical-html">
+<pre>
+<code>
+    &lt;ul class="menu-vertical"&gt;
+        &lt;li&gt;&lt;a href="#"&gt;Menu-01&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href="#"&gt;Menu-02&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href="#"&gt;Menu-03&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+</code>
+</pre>
+</div>
+<!-- css -->
+<div role="tabpanel" class="tab-pane fade" id="menus-vertical-css">
+<pre>
+<code>
+    .menu-vertical {
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+    }
+    .menu-vertical li a {
+        background: #ffffff;
+        padding: 10px;
+        display: block;
+        color: #333333;
+    }
+    .menu-vertical li a:hover {
+        background: #fafafa;
+        text-decoration: none;
+    }
+</code>
+</pre>
+</div>
+                        </div>
+                        </div>
+                    </div>
+
+                    <div id="menus-horizontal" class="content-body-block">
+                        <h3 class="content-body-title">Horizontal Menus</h3>
+                        <p class="content-body-description">横並びのメニュー表示の指定。</p>
+                        <div class="content-body-design">
+
+                            <!-- html --> 
+                            <div id="mod-menus-horizontal">
+                                <ul class="menu-horizontal">
+                                    <li><a href="#">Menu-01</a></li>
+                                    <li><a href="#">Menu-02</a></li>
+                                    <li><a href="#">Menu-03</a></li>
+                                </ul>
+                            </div>
+
+                            <!-- css -->
+                            <style>
+                                #mod-menus-horizontal .menu-horizontal { margin: 0; padding: 0; list-style-type: none; overflow: hidden; }
+                                #mod-menus-horizontal .menu-horizontal li { float: left; }
+                                #mod-menus-horizontal .menu-horizontal li a { background: #ffffff; padding: 10px; display: inline-block; color: #333333; }
+                                #mod-menus-horizontal .menu-horizontal li a:hover { background: #fafafa; text-decoration: none; }
+                            </style>
+
+                        </div>
+                        <div class="content-body-code">
+                            <ul class="nav nav-tabs code-tab" role="tablist">
+                                <li role="presentation" class="active"><a href="#menus-horizontal-html" aria-controls="menus-horizontal-html" role="tab" data-toggle="tab">HTML</a></li>
+                                <li role="presentation"><a href="#menus-horizontal-css" aria-controls="menus-horizontal-css" role="tab" data-toggle="tab">CSS</a></li>
+                            </ul>
+                            <div class="tab-content code-content">
+<!-- html -->
+<div role="tabpanel" class="tab-pane fade in active" id="menus-horizontal-html">
+<pre>
+<code>
+    &lt;ul class="menu-horizontal"&gt;
+        &lt;li&gt;&lt;a href="#"&gt;Menu-01&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href="#"&gt;Menu-02&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href="#"&gt;Menu-03&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+</code>
+</pre>
+</div>
+<!-- css -->
+<div role="tabpanel" class="tab-pane fade" id="menus-horizontal-css">
+<pre>
+<code>
+    .menu-horizontal {
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+        overflow: hidden;
+    }
+    .menu-horizontal li {
+        float: left;
+    }
+    .menu-horizontal li a {
+        background: #ffffff;
+        padding: 10px;
+        display: inline-block;
+        color: #333333;
+    }
+    .menu-horizontal li a:hover {
+        background: #fafafa;
+        text-decoration: none;
+    }
+</code>
+</pre>
+</div>
+                        </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+
+
+
+
+<!------------------------------ Text ------------------------------>
+
+            <div class="content-area container">
+                <h2 class="content-head">Text</h2>
+                <div class="content-body">
+
+                    <div id="text-title" class="content-body-block">
+                        <h3 class="content-body-title">Title</h3>
+                        <p class="content-body-description"><code>.title</code>クラスで標準サイズを指定。<br>
+                            サイズ変更する場合は後ろにクラスを追加。</p>
+                        <div class="content-body-design">
+
+                            <!-- html -->
+                            <div id="mod-text-title">
+                                <div class="design-area"><p class="title">タイトル</p></div>
+                                <div class="design-area"><p class="title title-section">タイトル</p></div>
+                                <div class="design-area"><p class="title title-block">タイトル</p></div>
+                            </div>
+
+                            <!-- css -->
+                            <style>
+                                #mod-text-title .title { color: #333333; }
+                                #mod-text-title .title-section { font-weight: bold; font-size: 2.8em;}
+                                #mod-text-title .title-block { font-weight: bold; font-size: 2em; }
+                            </style>
+
+                            <!-- javscript -->
+                            <script></script>
+
+                        </div>
+                        <div class="content-body-code">
+                            <ul class="nav nav-tabs code-tab" role="tablist">
+                                <li role="presentation" class="active"><a href="#text-title-html" aria-controls="text-title-html" role="tab" data-toggle="tab">HTML</a></li>
+                                <li role="presentation"><a href="#text-title-css" aria-controls="text-title-css" role="tab" data-toggle="tab">CSS</a></li>
+                            </ul>
+                            <div class="tab-content code-content">
+<!-- html -->
+<div role="tabpanel" class="tab-pane fade in active" id="text-title-html">
+<pre>
+<code>
+    &lt;div class="design-area"&gt;&lt;p class="title"&gt;タイトル&lt;/p&gt;&lt;/div&gt;
+    &lt;div class="design-area"&gt;&lt;p class="title title-section"&gt;タイトル&lt;/p&gt;&lt;/div&gt;
+    &lt;div class="design-area"&gt;&lt;p class="title title-block"&gt;タイトル&lt;/p&gt;&lt;/div&gt;
+</code>
+</pre>
+</div>
+<!-- css -->
+<div role="tabpanel" class="tab-pane fade" id="text-title-css">
+<pre>
+<code>
+    .title {
+        color: #333333;
+    }
+    .title-section {
+        font-weight: bold;
+        font-size: 2.8em;
+    }
+    .title-block {
+        font-weight: bold;
+        font-size: 2em;
+    }
+</code>
+</pre>
+</div>
+                        </div>
+                        </div>
+                    </div>
+
+                    <div id="text-link" class="content-body-block">
+                        <h3 class="content-body-title">Link</h3>
+                        <p class="content-body-description"><code>.link</code>クラスで標準ハイパーリンクを指定。<br>アイコンやアンダーラインを使用する場合は、後ろにクラスを追加。</p>
+                        <div class="content-body-design">
+
+                            <!-- html -->
+                            <div id="mod-text-link">
+                                <div class="design-area"><a href="#" class="link">リンク</a></div>
+                                <div class="design-area"><a href="#" class="link link-icon"><i class="fa fa-angle-right"></i>リンク</a></div>
+                                <div class="design-area"><a href="#" class="link link-icon-line"><span>リンク</span><i class="fa fa-angle-right"></i></a></div>
+                            </div>
+
+                            <!-- css -->
+                            <style>
+                                #mod-text-link .link { color: #333333; }
+                                #mod-text-link .link-icon {  }
+                                #mod-text-link .link-icon i { margin-right: 5px; }
+                                #mod-text-link .link-icon-line { text-decoration: none; }
+                                #mod-text-link .link-icon-line span { padding-bottom: 5px; border-bottom: 1px solid #333333; }
+                                #mod-text-link .link-icon-line i { margin-left: 10px; }
+                            </style>
+
+                            <!-- javscript -->
+                            <script></script>
+
+                        </div>
+                        <div class="content-body-code">
+                            <ul class="nav nav-tabs code-tab" role="tablist">
+                                <li role="presentation" class="active"><a href="#text-link-html" aria-controls="text-link-html" role="tab" data-toggle="tab">HTML</a></li>
+                                <li role="presentation"><a href="#text-link-css" aria-controls="text-link-css" role="tab" data-toggle="tab">CSS</a></li>
+                            </ul>
+                            <div class="tab-content code-content">
+<!-- html -->
+<div role="tabpanel" class="tab-pane fade in active" id="text-link-html">
+<pre>
+<code>
+    &lt;div class="design-area"&gt;&lt;a href="#" class="link"&gt;リンク&lt;/a&gt;&lt;/div&gt;
+    &lt;div class="design-area"&gt;&lt;a href="#" class="link link-icon"&gt;&lt;i class="fa fa-angle-right"&gt;&lt;/i&gt;リンク&lt;/a&gt;&lt;/div&gt;
+    &lt;div class="design-area"&gt;&lt;a href="#" class="link link-icon-line"&gt;&lt;span&gt;リンク&lt;/span&gt;&lt;i class="fa fa-angle-right"&gt;&lt;/i&gt;&lt;/a&gt;&lt;/div&gt;
+</code>
+</pre>
+</div>
+<!-- css -->
+<div role="tabpanel" class="tab-pane fade" id="text-link-css">
+<pre>
+<code>
+    .link {
+        color: #333333;
+    }
+    .link-icon i {
+        margin-right: 5px;
+    }
+    .link-icon-line {
+        text-decoration: none;
+    }
+    .link-icon-line span {
+        padding-bottom: 5px;
+        border-bottom: 1px solid #333333;
+    }
+    .link-icon-line i {
+        margin-left: 10px;
+    }
+</code>
+</pre>
+</div>
+                        </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+
+
+
+
+<!------------------------------ Modules ------------------------------>
+
+            <div class="content-area container">
+                <h2 class="content-head">Modules</h2>
+                <div class="content-body">
+
+                    <div id="modules-card" class="content-body-block">
+                        <h3 class="content-body-title">Card</h3>
+                        <p class="content-body-description">カード型のブロックリスト作成時に使用。<br>
+                            2カラムの場合、リストを囲うタグ（ul）に<code>.modules-col-02</code>クラスを指定。<br>
+                            同様に3カラムの場合、<code>.modules-col-03</code>クラスを指定。</p>
+                        <div class="content-body-design">
+
+                            <!-- html -->
+                            <div id="mod-modules-card">
+                                <ul class="modules-col-02 clearfix">
+                                    <li class="modules-content"><a href="#">
+                                        <div class="modules-content-inner">
+                                            <img class="img" src="http://placehold.it/350x200" alt="" />
+                                            <div class="modules-content-text">
+                                                <p class="title">タイトル</p>
+                                                <p class="description">テキスト</p>
+                                            </div>
+                                        </div>
+                                    </a></li>
+                                    <li class="modules-content"><a href="#">
+                                        <div class="modules-content-inner">
+                                            <img class="img" src="http://placehold.it/350x200" alt="" />
+                                            <div class="modules-content-text">
+                                                <p class="title">タイトル</p>
+                                                <p class="description">テキスト</p>
+                                            </div>
+                                        </div>
+                                    </a></li>
+                                </ul>
+                                <ul class="modules-col-03 clearfix">
+                                    <li class="modules-content"><a href="#">
+                                        <div class="modules-content-inner">
+                                            <img class="img" src="http://placehold.it/350x200" alt="" />
+                                            <div class="modules-content-text">
+                                                <p class="title">タイトル</p>
+                                                <p class="description">テキスト</p>
+                                            </div>
+                                        </div>
+                                    </a></li>
+                                    <li class="modules-content"><a href="#">
+                                        <div class="modules-content-inner">
+                                            <img class="img" src="http://placehold.it/350x200" alt="" />
+                                            <div class="modules-content-text">
+                                                <p class="title">タイトル</p>
+                                                <p class="description">テキスト</p>
+                                            </div>
+                                        </div>
+                                    </a></li>
+                                    <li class="modules-content"><a href="#">
+                                        <div class="modules-content-inner">
+                                            <img class="img" src="http://placehold.it/350x200" alt="" />
+                                            <div class="modules-content-text">
+                                                <p class="title">タイトル</p>
+                                                <p class="description">テキスト</p>
+                                            </div>
+                                        </div>
+                                    </a></li>
+                                </ul>
+                            </div>
+
+                            <!-- css -->
+                            <style>
+                                #mod-modules-card .modules-col-02 { margin-top: 20px; margin-bottom: 20px; margin-left: -10px; margin-right: -10px; list-style-type: none; padding: 0; }
+                                #mod-modules-card .modules-col-02 .modules-content { float: left; width: 50%; padding-left: 10px; padding-right: 10px; }
+                                #mod-modules-card .modules-col-03 { margin-top: 20px; margin-bottom: 20px; margin-left: -10px; margin-right: -10px; list-style-type: none; padding: 0; }
+                                #mod-modules-card .modules-col-03 .modules-content { float: left; width: 33.3333%; padding-left: 10px; padding-right: 10px; }
+                                #mod-modules-card .clearfix:after { content: ""; clear: both; display: block; }
+                                #mod-modules-card .modules-content-inner { box-shadow: 0 0 5px rgba(0,0,0,0.15); }
+                                #mod-modules-card .modules-content .img { width: 100%; }
+                                #mod-modules-card .modules-content-text { padding: 10px; background: #fafafa; }
+                                #mod-modules-card .modules-content .title { text-align: center; margin-bottom: 0; color: #333333; text-decoration: none; }
+                                #mod-modules-card .modules-content .description { text-align: center; margin-bottom: 0; color: #333333; text-decoration: none; }
+                            </style>
+
+                            <!-- javscript -->
+                            <script></script>
+
+                        </div>
+                        <div class="content-body-code">
+                            <ul class="nav nav-tabs code-tab" role="tabmodules">
+                                <li role="presentation" class="active"><a href="#modules-card-html" aria-controls="modules-card-html" role="tab" data-toggle="tab">HTML</a></li>
+                                <li role="presentation"><a href="#modules-card-css" aria-controls="modules-card-css" role="tab" data-toggle="tab">CSS</a></li>
+                            </ul>
+                            <div class="tab-content code-content">
+<!-- html -->
+<div role="tabpanel" class="tab-pane fade in active" id="modules-card-html">
+<pre>
+<code>
+    &lt;ul class="modules-col-02 clearfix"&gt;
+        &lt;li class="modules-content"&gt;&lt;a href="#"&gt;
+            &lt;div class="modules-content-inner"&gt;
+                &lt;img class="img" src="http://placehold.it/350x200" alt="" /&gt;
+                &lt;div class="modules-content-text"&gt;
+                    &lt;p class="title"&gt;タイトル&lt;/p&gt;
+                    &lt;p class="description"&gt;テキスト&lt;/p&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/a&gt;&lt;/li&gt;
+        &lt;li class="modules-content"&gt;&lt;a href="#"&gt;
+            &lt;div class="modules-content-inner"&gt;
+                &lt;img class="img" src="http://placehold.it/350x200" alt="" /&gt;
+                &lt;div class="modules-content-text"&gt;
+                    &lt;p class="title"&gt;タイトル&lt;/p&gt;
+                    &lt;p class="description"&gt;テキスト&lt;/p&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+    &lt;ul class="modules-col-03 clearfix"&gt;
+        &lt;li class="modules-content"&gt;&lt;a href="#"&gt;
+            &lt;div class="modules-content-inner"&gt;
+                &lt;img class="img" src="http://placehold.it/350x200" alt="" /&gt;
+                &lt;div class="modules-content-text"&gt;
+                    &lt;p class="title"&gt;タイトル&lt;/p&gt;
+                    &lt;p class="description"&gt;テキスト&lt;/p&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/a&gt;&lt;/li&gt;
+        &lt;li class="modules-content"&gt;&lt;a href="#"&gt;
+            &lt;div class="modules-content-inner"&gt;
+                &lt;img class="img" src="http://placehold.it/350x200" alt="" /&gt;
+                &lt;div class="modules-content-text"&gt;
+                    &lt;p class="title"&gt;タイトル&lt;/p&gt;
+                    &lt;p class="description"&gt;テキスト&lt;/p&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/a&gt;&lt;/li&gt;
+        &lt;li class="modules-content"&gt;&lt;a href="#"&gt;
+            &lt;div class="modules-content-inner"&gt;
+                &lt;img class="img" src="http://placehold.it/350x200" alt="" /&gt;
+                &lt;div class="modules-content-text"&gt;
+                    &lt;p class="title"&gt;タイトル&lt;/p&gt;
+                    &lt;p class="description"&gt;テキスト&lt;/p&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+</code>
+</pre>
+</div>
+<!-- css -->
+<div role="tabpanel" class="tab-pane fade" id="modules-card-css">
+<pre>
+<code>
+    .modules-col-02 {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        margin-left: -10px;
+        margin-right: -10px;
+        list-style-type: none;
+        padding: 0;
+    }
+    .modules-col-02 .modules-content {
+        float: left;
+        width: 50%;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .modules-col-03 {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        margin-left: -10px;
+        margin-right: -10px;
+        list-style-type: none;
+        padding: 0;
+    }
+    .modules-col-03 .modules-content {
+        float: left;
+        width: 33.3333%;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .clearfix:after {
+        content: "";
+        clear: both;
+        display: block;
+    }
+    .modules-content-inner {
+        box-shadow: 0 0 5px rgba(0,0,0,0.15);
+    }
+    .modules-content .img {
+        width: 100%;
+    }
+    .modules-content-text {
+        padding: 10px;
+        background: #fafafa;
+    }
+    .modules-content .title {
+        text-align: center;
+        margin-bottom: 0;
+        color: #333333;
+        text-decoration: none;
+    }
+    .modules-content .description {
+        text-align: center;
+        margin-bottom: 0;
+        color: #333333;
+        text-decoration: none;
+    }
+</code>
+</pre>
+</div>
+                        </div>
+                        </div>
+                    </div>
+
+                    <div id="modules-pagination" class="content-body-block">
+                        <h3 class="content-body-title">Pagination</h3>
+                        <p class="content-body-description">コンテンツ量の多い一覧ページなど、ページ送りが必要な箇所に使用。</p>
+                        <div class="content-body-design">
+
+                            <!-- html -->
+                            <div id="mod-modules-pagination">
+                                <ul class="pagination">
+                                    <li class="disabled"><span>&laquo; First</span></li>
+                                    <li class="disabled"><span>&lsaquo; Prev</span></li>
+                                    <li class="active"><a href="#">1</a></li>
+                                    <li class=""><a rel="next" href="/projects?page=2">2</a></li>
+                                    <li class=""><a href="/projects?page=3">3</a></li>
+                                    <li class="disabled"><a href="#">&hellip;</a></li>
+                                    <li><span><a rel="next" href="/projects?page=2">Next &rsaquo;</a></span></li>
+                                    <li><span><a href="/projects?page=13">Last &raquo;</a></span></li>
+                                </ul>
+                            </div>
+
+                            <!-- css -->
+                            <style>
+                                #mod-modules-pagination .pagination { margin: 0; }
+                                #mod-modules-pagination .pagination>.active>a,
+                                #mod-modules-pagination .pagination>.active>a:focus,
+                                #mod-modules-pagination .pagination>.active>a:hover,
+                                #mod-modules-pagination .pagination>.active>span,
+                                #mod-modules-pagination .pagination>.active>span:focus,
+                                #mod-modules-pagination .pagination>.active>span:hover { background: #ed4e52; border-color: #ed4e52; color: #ffffff; }
+                                #mod-modules-pagination .pagination>li>a,
+                                #mod-modules-pagination .pagination>li>span,
+                                #mod-modules-pagination .pagination>li>span>a { color: #333333; }
+                            </style>
+
+                        </div>
+                        <div class="content-body-code">
+                            <ul class="nav nav-tabs code-tab" role="tablist">
+                                <li role="presentation" class="active"><a href="#modules-pagination-html" aria-controls="modules-pagination-html" role="tab" data-toggle="tab">HTML</a></li>
+                                <li role="presentation"><a href="#modules-pagination-css" aria-controls="modules-pagination-css" role="tab" data-toggle="tab">CSS</a></li>
+                            </ul>
+                            <div class="tab-content code-content">
+<!-- html -->
+<div role="tabpanel" class="tab-pane fade in active" id="modules-pagination-html">
+<pre>
+<code>
+    &lt;ul class="pagination"&gt;
+        &lt;li class="disabled"&gt;&lt;span&gt;&laquo; First&lt;/span&gt;&lt;/li&gt;
+        &lt;li class="disabled"&gt;&lt;span&gt;&lsaquo; Prev&lt;/span&gt;&lt;/li&gt;
+        &lt;li class="active"&gt;&lt;a href="#"&gt;1&lt;/a&gt;&lt;/li&gt;
+        &lt;li class=""&gt;&lt;a rel="next" href="/projects?page=2"&gt;2&lt;/a&gt;&lt;/li&gt;
+        &lt;li class=""&gt;&lt;a href="/projects?page=3"&gt;3&lt;/a&gt;&lt;/li&gt;
+        &lt;li class="disabled"&gt;&lt;a href="#"&gt;&hellip;&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;span&gt;&lt;a rel="next" href="/projects?page=2"&gt;Next &rsaquo;&lt;/a&gt;&lt;/span&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;span&gt;&lt;a href="/projects?page=13"&gt;Last &raquo;&lt;/a&gt;&lt;/span&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+</code>
+</pre>
+</div>
+<!-- css -->
+<div role="tabpanel" class="tab-pane fade" id="modules-pagination-css">
+<pre>
+<code>
+    .pagination {
+        margin: 0;
+    }
+    .pagination>.active>a,
+    .pagination>.active>a:focus,
+    .pagination>.active>a:hover,
+    .pagination>.active>span,
+    .pagination>.active>span:focus,
+    .pagination>.active>span:hover {
+        background: #ed4e52;
+        border-color: #ed4e52;
+        color: #ffffff;
+    }
+    .pagination>li>a,
+    .pagination>li>span,
+    .pagination>li>span>a {
+        color: #333333;
+    }
+</code>
+</pre>
+</div>
+                        </div>
+                        </div>
+                    </div>
+
+
+
+                    <div id="modules-pankuzu" class="content-body-block">
+                        <h3 class="content-body-title">Pankuzu</h3>
+                        <p class="content-body-description">入れ子式に配置されたページの現在地を表すのに使用。最後のテキストのみリンクを外す。</p>
+                        <div class="content-body-design">
+
+                            <!-- html -->
+                            <div id="mod-modules-pankuzu">
+                                <ul class="pankuzu">
+                                    <li><a href="#">text-01</a></li>
+                                    <li><a href="#">text-02</a></li>
+                                    <li>text-03</li>
+                                </ul>
+                            </div>
+
+                            <!-- css -->
+                            <style>
+                                #mod-modules-pankuzu .pankuzu { overflow: hidden; list-style-type: none; padding: 0; margin: 0; }
+                                #mod-modules-pankuzu .pankuzu li { float: left; color: #333333; }
+                                #mod-modules-pankuzu .pankuzu li:after { content: ">"; margin-left: 10px; margin-right: 10px; }
+                                #mod-modules-pankuzu .pankuzu li:last-child:after { content: ""; }
+                                #mod-modules-pankuzu .pankuzu li a { color: #333333; text-decoration: underline; }
+                            </style>
+
+                        </div>
+                        <div class="content-body-code">
+                            <ul class="nav nav-tabs code-tab" role="tablist">
+                                <li role="presentation" class="active"><a href="#modules-pankuzu-html" aria-controls="modules-pankuzu-html" role="tab" data-toggle="tab">HTML</a></li>
+                                <li role="presentation"><a href="#modules-pankuzu-css" aria-controls="modules-pankuzu-css" role="tab" data-toggle="tab">CSS</a></li>
+                            </ul>
+                            <div class="tab-content code-content">
+<!-- html -->
+<div role="tabpanel" class="tab-pane fade in active" id="modules-pankuzu-html">
+<pre>
+<code>
+    &lt;ul class="pankuzu"&gt;
+        &lt;li&gt;&lt;a href="#"&gt;text-01&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href="#"&gt;text-02&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;text-03&lt;/li&gt;
+    &lt;/ul&gt;
+</code>
+</pre>
+</div>
+<!-- css -->
+<div role="tabpanel" class="tab-pane fade" id="modules-pankuzu-css">
+<pre>
+<cod>
+    .pankuzu {
+        overflow: hidden;
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+    }
+    .pankuzu li {
+        float: left;
+        color: #333333;
+    }
+    .pankuzu li:after {
+        content: ">";
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .pankuzu li:last-child:after {
+        content: "";
+    }
+    .pankuzu li a {
+        color: #333333;
+        text-decoration: underline;
+    }
+</code>
+</pre>
+</div>
+                        </div>
+                        </div>
+                    </div>
+
+
+
+                </div>
+            </div>
+
+
+
+
+
+
+
+
+
+
+<!------------------------------ ▼ content format ▼ ------------------------------>
+
+            <div class="content-area container">
+                <h2 class="content-head"></h2>
+                <div class="content-body">
+
+                    <div id="" class="content-body-block">
+                        <h3 class="content-body-title"></h3>
+                        <p class="content-body-description"></p>
+                        <div class="content-body-design">
+
+                            <!-- html --> 
+                            <div id="#">
+                                <div class="design-area"></div>
+                                <div class="design-area"></div>
+                            </div>
+
+                            <!-- css -->
+                            <style></style>
+
+                            <!-- javscript --> 
+                            <script></script>
+
+                        </div>
+                        <div class="content-body-code">
+                            <ul class="nav nav-tabs code-tab" role="tablist">
+                                <li role="presentation" class="active"><a href="#" aria-controls="" role="tab" data-toggle="tab">HTML</a></li>
+                                <li role="presentation"><a href="#" aria-controls="" role="tab" data-toggle="tab">CSS</a></li>
+                                <li role="presentation"><a href="#" aria-controls="" role="tab" data-toggle="tab">Javascript</a></li>
+                            </ul>
+                            <div class="tab-content code-content">
+<!-- html -->
+<div role="tabpanel" class="tab-pane fade in active" id="">
+<pre>
+<code>
+    
+</code>
+</pre>
+</div>
+<!-- css -->
+<div role="tabpanel" class="tab-pane fade" id="">
+<pre>
+<code>
+    
+</code>
+</pre>
+</div>
+<!-- javascript -->
+<div role="tabpanel" class="tab-pane fade" id="">
+<pre>
+<code>
+    
+</code>
+</pre>
+</div>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+<!------------------------------ ▲ content format ▲ ------------------------------>
+
+
+
+
+
+
+
+
+
+        </div>
+
+    </div>
+
+</div>
+
+<!-- script -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+<!-- bootstrap js -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" integrity="sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ==" crossorigin="anonymous"></script>
+
+<!-- window size -->
+<script>
+var WindowHeight = $(window).height();
+    $(function(){
+        $('.main-title').css('height',WindowHeight+'px');
+    });
+</script>
+
+</body>
+</html>
